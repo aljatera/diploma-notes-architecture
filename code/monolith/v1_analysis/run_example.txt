@@ -1,0 +1,6 @@
+python app.py add "Monolit" "Vse v eni aplikaciji"
+python app.py list
+python app.py view 1
+python app.py tag 1 arhitektura
+python app.py filter arhitektura
+python app.py search Mono
