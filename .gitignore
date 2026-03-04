@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env
+
+# macOS files
+.DS_Store
+
+# SQLite databases
+*.sqlite
+*.db
+
+# pytest
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+#DATABASE
+data/
