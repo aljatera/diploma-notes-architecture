@@ -3,14 +3,20 @@ from database import init_db, add_note, list_notes, get_note, add_tag_to_note, l
 
 
 def print_usage():
-    print("Usage:")
-    print('python app.py add "Title" "Content"')
-    print("python app.py list")
-    print("python app.py view <id>")
-    print("python app.py tag <id> <tag>")
-    print("python app.py filter <tag>")
-    print('python app.py search "keyword"')
-    
+    print()
+    print("CLI Notes Application")
+    print("---------------------")
+    print()
+    print("Available commands:")
+    print('  add "Title" "Content"')
+    print("  list")
+    print("  view <id>")
+    print("  tag <id> <tag>")
+    print("  filter <tag>")
+    print('  search "keyword"')
+    print("  help")
+    print()
+
 def main():
     init_db()
 
@@ -20,6 +26,10 @@ def main():
         return
 
     command = sys.argv[1]
+
+    if command == "help":
+        print_usage()
+        return
 
     if command == "add":
         if len(sys.argv) < 4:
